@@ -12,6 +12,10 @@ app.use(express.static('public'))
 let items = [];
 let id = 0;
 let priority = 0;
+let solo = 0;
+let duo = 0;
+let squad = 0;
+
 
 app.get('/api/items', (req, res) => {
   res.send(items);
@@ -36,7 +40,7 @@ app.put('/api/items/:id', (req, res) => {
 
 app.post('/api/items', (req, res) => {
   id = id + 1;
-  let item = {id:id, text:req.body.text, priority:req.body.priority, completed: req.body.completed};
+  let item = {id:id, text:req.body.text, priority:req.body.priority, solo:req.body.solo, duo:req.body.duo, squad:req.body.squad, completed: req.body.completed};
   items.push(item);
 
   var sortable = [];

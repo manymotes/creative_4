@@ -1,9 +1,16 @@
 var app = new Vue({
   el: '#app',
+
   data: {
     items: [],
     text: '',
     priority: '0',
+    solo: '0',
+    duo: '0',
+    squad: '0',
+    solor: 0,
+    duor: 0,
+    squadr: 0,
     show: 'all',
     drag: {},
   },
@@ -80,13 +87,20 @@ return true;
     });
   },
     showAll: function() {
-      this.show = 'all';
+      this.solor +=1;
+      this.show = 'active';
+      this.solo = this.solor;
+
     },
     showActive: function() {
-      this.show = 'active';
+      this.duor +=1;
+      this.show = 'completed';
+      this.duo = this.duor;
     },
     showCompleted: function() {
+      this.squadr +=1;
       this.show = 'completed';
+      this.squad = this.squadr;
     },
     deleteCompleted: function() {
       this.items.forEach(item => {
