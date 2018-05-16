@@ -36,6 +36,7 @@ console.log(document.cookie);
 		e.preventDefault();
 		var value = $("#nameInput").val();
 		//document.cookie="name=" + value;
+		document.cookie = "loggedIn=" +"true";
 	    console.log(value);
 		document.cookie="name=" + value;
 
