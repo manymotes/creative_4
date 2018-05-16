@@ -110,7 +110,7 @@ console.log(document.cookie);
 
 			clientId: "VQHLRGUBJF1PZRNJSPIQID5JNZQ1E0XU4V5UE45HJ540CQSM",
 	    	clientSecret: "2EX1IFCJB0DBB0LIUV3CBT1OTUYYDMGPS5QSKLMD0FCZYVAD",
-		    redirectUrl : "http://localhost:3001/profile.html",
+		    redirectUrl : "http://ec2-18-220-207-81.us-east-2.compute.amazonaws.com:3000/profile.html",
 		}
 
 		var url = "https://foursquare.com/oauth2/authenticate";
@@ -157,7 +157,7 @@ console.log(document.cookie);
 
 			clientId: "VQHLRGUBJF1PZRNJSPIQID5JNZQ1E0XU4V5UE45HJ540CQSM",
 				clientSecret: "2EX1IFCJB0DBB0LIUV3CBT1OTUYYDMGPS5QSKLMD0FCZYVAD",
-				redirectUrl : "http://localhost:3001/profile.html",
+				redirectUrl : "http://ec2-18-220-207-81.us-east-2.compute.amazonaws.com:3000/profile.html",
 		}
 
 		var url = "https://foursquare.com/oauth2/authenticate";
