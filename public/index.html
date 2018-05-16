@@ -1,57 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css"/>
-    <title>Fortnite stats</title>
+    <title>Lab 3</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body style="background-color:#49fb35;">
-    <div id="app">
-      <h1>Keep track of your Forntine Wins</h1>
-       <img src="Fortnite-battle-royale-patch.png" alt="Fortnite-battle-royale-patch.png" width="600" height="400">
+  <body>
 
-      <form v-on:submit.prevent="addItem">
+    <h1>Enter your name, if its registered it will bring up your infor, if not it will register you and bring up your info.</h1>
 
 
-      </form>
-      <div class="controls">
-	<button v-on:click="showAll()">Add a Solo Win</button>
-	<button v-on:click="showActive()">Add a Duo Win</button>
-	<button v-on:click="showCompleted()">Add a Squad Win</button>
-
-      </div>
-
+    <form>
+      <label>Enter your User Name</label>
+      <input id="nameInput" type="text"></input><br/>
+      <input id="nameSubmit" type="submit" value="Submit"></input>
     </form>
-    <div class="stats">
-<span>Solo Wins: {{ solo }}</span>
+
+  </br>
+  </br>
+   <form>
+      <input id="kendall" type="submit" value="View Kendall's Profile"></input>
+      <input id="joe" type="submit" value="View Joe's Profile"></input>
+    <form>
+    <form>
+  </br>
+  </br>
+  </br>
+  </br>
+  <div class ="#stackResults" id = "output">
+
+  </div>
+
+
+  <a href="/">Kendall's profile</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script text="type/javascript" src="script.js"></script>
 </br>
-<span>Duo Wins: {{ duo }}</span>
 </br>
-<span>Squad wins: {{ squad }}</span>
-
-    </div>
-
-
-      <ul>
-
-      </ul>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js" integrity="sha256-pU9euBaEcVl8Gtg+FRYCtin2vKLN8sx5/4npZDmY2VA=" crossorigin="anonymous"></script>
-    <script src="/script.js"></script>
+</br>
+</br>
   </body>
   <footer>
-  </br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-    <p>Git Repository: <a href="https://github.com/manymotes/creative_4.git">
-    github.com</a>.</p>
+
   </footer>
 </html>
